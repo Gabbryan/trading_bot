@@ -1799,3 +1799,378 @@ Traceback (most recent call last):
   File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 358, in _validate_token
     raise InvalidToken()
 telegram.error.InvalidToken: Invalid token
+2022-12-19 14:50:18,378 - freqtrade.loggers - INFO - Verbosity set to 0
+2022-12-19 14:50:18,379 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2022-12-19 14:50:18,379 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2022-12-19 14:50:18,380 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2022-12-19 14:50:18,381 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2022-12-19 14:50:18,382 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2022-12-19 14:50:18,404 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2022-12-19 14:50:18,404 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2022-12-19 14:50:18,406 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2022-12-19 14:50:18,408 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2022-12-19 14:50:18,408 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2022-12-19 14:50:18,420 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2022-12-19 14:50:18,421 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2022-12-19 14:50:18,422 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2022-12-19 14:50:18,423 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 100.
+2022-12-19 14:50:18,424 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2022-12-19 14:50:18,424 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2022-12-19 14:50:18,425 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2022-12-19 14:50:18,426 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2022-12-19 14:50:18,426 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2022-12-19 14:50:18,427 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2022-12-19 14:50:18,428 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2022-12-19 14:50:18,428 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2022-12-19 14:50:18,429 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2022-12-19 14:50:18,430 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2022-12-19 14:50:18,431 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2022-12-19 14:50:18,431 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2022-12-19 14:50:18,432 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 100
+2022-12-19 14:50:18,432 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2022-12-19 14:50:18,433 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2022-12-19 14:50:18,434 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2022-12-19 14:50:18,434 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2022-12-19 14:50:18,435 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2022-12-19 14:50:18,436 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2022-12-19 14:50:18,436 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2022-12-19 14:50:18,437 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2022-12-19 14:50:18,438 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2022-12-19 14:50:18,438 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2022-12-19 14:50:18,440 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2022-12-19 14:50:18,440 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2022-12-19 14:50:18,443 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2022-12-19 14:50:18,443 - freqtrade.exchange.exchange - INFO - Using CCXT 2.1.96
+2022-12-19 14:50:18,444 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2022-12-19 14:50:18,446 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 1000}
+2022-12-19 14:50:18,448 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2022-12-19 14:50:21,618 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Kraken'...
+2022-12-19 14:50:21,722 - freqtrade.wallets - INFO - Wallets synced.
+2022-12-19 14:50:21,731 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2022-12-19 14:50:22,304 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2022-12-19 14:50:22,484 - freqtrade.commands.trade_commands - ERROR - Invalid token
+2022-12-19 14:50:22,485 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 18, in start_trading
+    worker = Worker(args)
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+  File "/freqtrade/freqtrade/freqtradebot.py", line 83, in __init__
+    self.rpc: RPCManager = RPCManager(self)
+  File "/freqtrade/freqtrade/rpc/rpc_manager.py", line 30, in __init__
+    self.registered_modules.append(Telegram(self._rpc, config))
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 102, in __init__
+    self._init()
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 158, in _init
+    self._updater = Updater(token=self._config['telegram']['token'], workers=0,
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 279, in __init__
+    self.bot = ExtBot(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 99, in __init__
+    super().__init__(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 194, in __init__
+    self.token = self._validate_token(token)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 358, in _validate_token
+    raise InvalidToken()
+telegram.error.InvalidToken: Invalid token
+2022-12-19 14:50:24,743 - freqtrade.loggers - INFO - Verbosity set to 0
+2022-12-19 14:50:24,744 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2022-12-19 14:50:24,744 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2022-12-19 14:50:24,745 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2022-12-19 14:50:24,746 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2022-12-19 14:50:24,747 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2022-12-19 14:50:24,782 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2022-12-19 14:50:24,783 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2022-12-19 14:50:24,785 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2022-12-19 14:50:24,788 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2022-12-19 14:50:24,789 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2022-12-19 14:50:24,813 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2022-12-19 14:50:24,821 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2022-12-19 14:50:24,824 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2022-12-19 14:50:24,826 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 100.
+2022-12-19 14:50:24,827 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2022-12-19 14:50:24,828 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2022-12-19 14:50:24,829 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2022-12-19 14:50:24,830 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2022-12-19 14:50:24,837 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2022-12-19 14:50:24,838 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2022-12-19 14:50:24,838 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2022-12-19 14:50:24,839 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2022-12-19 14:50:24,840 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2022-12-19 14:50:24,841 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2022-12-19 14:50:24,842 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2022-12-19 14:50:24,842 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2022-12-19 14:50:24,843 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 100
+2022-12-19 14:50:24,844 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2022-12-19 14:50:24,845 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2022-12-19 14:50:24,845 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2022-12-19 14:50:24,846 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2022-12-19 14:50:24,847 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2022-12-19 14:50:24,848 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2022-12-19 14:50:24,848 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2022-12-19 14:50:24,849 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2022-12-19 14:50:24,849 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2022-12-19 14:50:24,850 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2022-12-19 14:50:24,851 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2022-12-19 14:50:24,851 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2022-12-19 14:50:24,854 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2022-12-19 14:50:24,855 - freqtrade.exchange.exchange - INFO - Using CCXT 2.1.96
+2022-12-19 14:50:24,856 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2022-12-19 14:50:24,858 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 1000}
+2022-12-19 14:50:24,859 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2022-12-19 14:50:27,945 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Kraken'...
+2022-12-19 14:50:28,051 - freqtrade.wallets - INFO - Wallets synced.
+2022-12-19 14:50:28,059 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2022-12-19 14:50:28,813 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2022-12-19 14:50:28,993 - freqtrade.commands.trade_commands - ERROR - Invalid token
+2022-12-19 14:50:28,994 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 18, in start_trading
+    worker = Worker(args)
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+  File "/freqtrade/freqtrade/freqtradebot.py", line 83, in __init__
+    self.rpc: RPCManager = RPCManager(self)
+  File "/freqtrade/freqtrade/rpc/rpc_manager.py", line 30, in __init__
+    self.registered_modules.append(Telegram(self._rpc, config))
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 102, in __init__
+    self._init()
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 158, in _init
+    self._updater = Updater(token=self._config['telegram']['token'], workers=0,
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 279, in __init__
+    self.bot = ExtBot(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 99, in __init__
+    super().__init__(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 194, in __init__
+    self.token = self._validate_token(token)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 358, in _validate_token
+    raise InvalidToken()
+telegram.error.InvalidToken: Invalid token
+2022-12-19 14:50:31,453 - freqtrade.loggers - INFO - Verbosity set to 0
+2022-12-19 14:50:31,455 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2022-12-19 14:50:31,456 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2022-12-19 14:50:31,456 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2022-12-19 14:50:31,457 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2022-12-19 14:50:31,458 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2022-12-19 14:50:31,481 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2022-12-19 14:50:31,482 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2022-12-19 14:50:31,483 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2022-12-19 14:50:31,485 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2022-12-19 14:50:31,486 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2022-12-19 14:50:31,496 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2022-12-19 14:50:31,497 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2022-12-19 14:50:31,498 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2022-12-19 14:50:31,499 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 100.
+2022-12-19 14:50:31,499 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2022-12-19 14:50:31,500 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2022-12-19 14:50:31,501 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2022-12-19 14:50:31,501 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2022-12-19 14:50:31,502 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2022-12-19 14:50:31,503 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2022-12-19 14:50:31,503 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2022-12-19 14:50:31,504 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2022-12-19 14:50:31,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2022-12-19 14:50:31,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2022-12-19 14:50:31,506 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2022-12-19 14:50:31,506 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2022-12-19 14:50:31,507 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 100
+2022-12-19 14:50:31,508 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2022-12-19 14:50:31,508 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2022-12-19 14:50:31,509 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2022-12-19 14:50:31,510 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2022-12-19 14:50:31,510 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2022-12-19 14:50:31,511 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2022-12-19 14:50:31,512 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2022-12-19 14:50:31,512 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2022-12-19 14:50:31,513 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2022-12-19 14:50:31,514 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2022-12-19 14:50:31,515 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2022-12-19 14:50:31,515 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2022-12-19 14:50:31,518 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2022-12-19 14:50:31,518 - freqtrade.exchange.exchange - INFO - Using CCXT 2.1.96
+2022-12-19 14:50:31,519 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2022-12-19 14:50:31,521 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 1000}
+2022-12-19 14:50:31,522 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2022-12-19 14:50:34,693 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Kraken'...
+2022-12-19 14:50:34,821 - freqtrade.wallets - INFO - Wallets synced.
+2022-12-19 14:50:34,836 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2022-12-19 14:52:29,865 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2022-12-19 14:52:30,109 - freqtrade.commands.trade_commands - ERROR - Invalid token
+2022-12-19 14:52:30,111 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 18, in start_trading
+    worker = Worker(args)
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+  File "/freqtrade/freqtrade/freqtradebot.py", line 83, in __init__
+    self.rpc: RPCManager = RPCManager(self)
+  File "/freqtrade/freqtrade/rpc/rpc_manager.py", line 30, in __init__
+    self.registered_modules.append(Telegram(self._rpc, config))
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 102, in __init__
+    self._init()
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 158, in _init
+    self._updater = Updater(token=self._config['telegram']['token'], workers=0,
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 279, in __init__
+    self.bot = ExtBot(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 99, in __init__
+    super().__init__(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 194, in __init__
+    self.token = self._validate_token(token)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 358, in _validate_token
+    raise InvalidToken()
+telegram.error.InvalidToken: Invalid token
+2022-12-19 14:52:32,278 - freqtrade.loggers - INFO - Verbosity set to 0
+2022-12-19 14:52:32,279 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2022-12-19 14:52:32,280 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2022-12-19 14:52:32,280 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2022-12-19 14:52:32,281 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2022-12-19 14:52:32,282 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2022-12-19 14:52:32,306 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2022-12-19 14:52:32,306 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2022-12-19 14:52:32,308 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2022-12-19 14:52:32,310 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2022-12-19 14:52:32,311 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2022-12-19 14:52:32,322 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2022-12-19 14:52:32,323 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2022-12-19 14:52:32,324 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2022-12-19 14:52:32,325 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 100.
+2022-12-19 14:52:32,325 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2022-12-19 14:52:32,326 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2022-12-19 14:52:32,327 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2022-12-19 14:52:32,327 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2022-12-19 14:52:32,328 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2022-12-19 14:52:32,329 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2022-12-19 14:52:32,329 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2022-12-19 14:52:32,330 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2022-12-19 14:52:32,331 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2022-12-19 14:52:32,331 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2022-12-19 14:52:32,332 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2022-12-19 14:52:32,333 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2022-12-19 14:52:32,333 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 100
+2022-12-19 14:52:32,334 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2022-12-19 14:52:32,335 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2022-12-19 14:52:32,335 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2022-12-19 14:52:32,336 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2022-12-19 14:52:32,337 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2022-12-19 14:52:32,337 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2022-12-19 14:52:32,339 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2022-12-19 14:52:32,340 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2022-12-19 14:52:32,341 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2022-12-19 14:52:32,341 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2022-12-19 14:52:32,342 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2022-12-19 14:52:32,343 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2022-12-19 14:52:32,345 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2022-12-19 14:52:32,346 - freqtrade.exchange.exchange - INFO - Using CCXT 2.1.96
+2022-12-19 14:52:32,346 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2022-12-19 14:52:32,348 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 1000}
+2022-12-19 14:52:32,350 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2022-12-19 14:52:35,671 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Kraken'...
+2022-12-19 14:52:35,787 - freqtrade.wallets - INFO - Wallets synced.
+2022-12-19 14:52:35,796 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2022-12-19 14:52:36,351 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2022-12-19 14:52:36,669 - freqtrade.commands.trade_commands - ERROR - Invalid token
+2022-12-19 14:52:36,673 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 18, in start_trading
+    worker = Worker(args)
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+  File "/freqtrade/freqtrade/freqtradebot.py", line 83, in __init__
+    self.rpc: RPCManager = RPCManager(self)
+  File "/freqtrade/freqtrade/rpc/rpc_manager.py", line 30, in __init__
+    self.registered_modules.append(Telegram(self._rpc, config))
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 102, in __init__
+    self._init()
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 158, in _init
+    self._updater = Updater(token=self._config['telegram']['token'], workers=0,
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 279, in __init__
+    self.bot = ExtBot(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 99, in __init__
+    super().__init__(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 194, in __init__
+    self.token = self._validate_token(token)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 358, in _validate_token
+    raise InvalidToken()
+telegram.error.InvalidToken: Invalid token
+2022-12-19 14:52:39,012 - freqtrade.loggers - INFO - Verbosity set to 0
+2022-12-19 14:52:39,013 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2022-12-19 14:52:39,014 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2022-12-19 14:52:39,015 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2022-12-19 14:52:39,016 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2022-12-19 14:52:39,016 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2022-12-19 14:52:39,041 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2022-12-19 14:52:39,042 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/kraken ...
+2022-12-19 14:52:39,043 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2022-12-19 14:52:39,045 - freqtrade.exchange.check_exchange - INFO - Exchange "kraken" is officially supported by the Freqtrade development team.
+2022-12-19 14:52:39,046 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2022-12-19 14:52:39,057 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2022-12-19 14:52:39,058 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2022-12-19 14:52:39,059 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2022-12-19 14:52:39,059 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 100.
+2022-12-19 14:52:39,060 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2022-12-19 14:52:39,061 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2022-12-19 14:52:39,062 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2022-12-19 14:52:39,062 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2022-12-19 14:52:39,063 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2022-12-19 14:52:39,064 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2022-12-19 14:52:39,064 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2022-12-19 14:52:39,065 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2022-12-19 14:52:39,066 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2022-12-19 14:52:39,066 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2022-12-19 14:52:39,067 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2022-12-19 14:52:39,068 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2022-12-19 14:52:39,068 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 100
+2022-12-19 14:52:39,069 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2022-12-19 14:52:39,070 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2022-12-19 14:52:39,070 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2022-12-19 14:52:39,071 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2022-12-19 14:52:39,071 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2022-12-19 14:52:39,072 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2022-12-19 14:52:39,073 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2022-12-19 14:52:39,073 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2022-12-19 14:52:39,074 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2022-12-19 14:52:39,075 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2022-12-19 14:52:39,075 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2022-12-19 14:52:39,076 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2022-12-19 14:52:39,078 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2022-12-19 14:52:39,079 - freqtrade.exchange.exchange - INFO - Using CCXT 2.1.96
+2022-12-19 14:52:39,080 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2022-12-19 14:52:39,082 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 1000}
+2022-12-19 14:52:39,086 - freqtrade.exchange.exchange - INFO - Using Exchange "Kraken"
+2022-12-19 14:52:42,374 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Kraken'...
+2022-12-19 14:52:42,462 - freqtrade.wallets - INFO - Wallets synced.
+2022-12-19 14:52:42,470 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2022-12-19 14:52:43,098 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2022-12-19 14:52:43,234 - freqtrade.commands.trade_commands - ERROR - Invalid token
+2022-12-19 14:52:43,235 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 18, in start_trading
+    worker = Worker(args)
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+  File "/freqtrade/freqtrade/freqtradebot.py", line 83, in __init__
+    self.rpc: RPCManager = RPCManager(self)
+  File "/freqtrade/freqtrade/rpc/rpc_manager.py", line 30, in __init__
+    self.registered_modules.append(Telegram(self._rpc, config))
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 102, in __init__
+    self._init()
+  File "/freqtrade/freqtrade/rpc/telegram.py", line 158, in _init
+    self._updater = Updater(token=self._config['telegram']['token'], workers=0,
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/updater.py", line 279, in __init__
+    self.bot = ExtBot(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/ext/extbot.py", line 99, in __init__
+    super().__init__(
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 194, in __init__
+    self.token = self._validate_token(token)
+  File "/home/ftuser/.local/lib/python3.10/site-packages/telegram/bot.py", line 358, in _validate_token
+    raise InvalidToken()
+telegram.error.InvalidToken: Invalid token
