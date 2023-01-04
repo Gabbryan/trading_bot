@@ -43,15 +43,12 @@
             // Enable the below for downoading data.
             //"rateLimit": 3100
         },
-        "pair_whitelist": [
-        ],
-        "pair_blacklist": [
-
-        ]
+        "pair_whitelist": ["BTC/USDT", "ETH/USDT", "SOL/USDT"],
+        "pair_blacklist": []
     },
     "pairlists": [
         {
-            "method": "VolumePairList",
+            "method": "StaticPairList",
             "number_assets": 20,
             "sort_key": "quoteVolume",
             "min_value": 0,
@@ -73,7 +70,7 @@
         "remove_pumps": false
     },
     "telegram": {
-        "enabled": true,
+        "enabled": false,
         "token": "",
         "chat_id": ""
     },
